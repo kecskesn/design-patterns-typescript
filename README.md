@@ -16,3 +16,16 @@ Types of Design Patterns
 * Creational
 * Structural
 * Behavioral
+
+## Setup Project
+
+```bash
+git clone https://github.com/kecskesn/design-patterns-typescript.git
+cd design-patterns-typeScript
+npm install -g typescript
+npm install
+npm start
+
+# run each pattern separately, e.g,
+node .\\dist\\01-creational-patterns\\01-factory\\client.js
+```
