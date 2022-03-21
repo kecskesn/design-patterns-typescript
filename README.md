@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 Design patterns are solutions to recurring problems. They are best practices that evolved over a long period of time.
 
@@ -17,7 +17,7 @@ Types of Design Patterns
 * Structural
 * Behavioral
 
-## Setup Project
+# Setup Project
 
 ```bash
 git clone https://github.com/kecskesn/design-patterns-typescript.git
@@ -29,3 +29,9 @@ npm start
 # run each pattern separately, e.g,
 node .\dist\01-creational-patterns\01-factory\client.js
 ```
+
+# Useful links
+
+* [Design patterns on refactoring.guru](https://refactoring.guru/design-patterns)
+* [Sean Bradley - Design Patterns in Typescript (github)](https://github.com/Sean-Bradley/Design-Patterns-In-TypeScript)
+* [kamranahmedse - Design Patterns for Humans (github)](https://github.com/kamranahmedse/design-patterns-for-humans)
