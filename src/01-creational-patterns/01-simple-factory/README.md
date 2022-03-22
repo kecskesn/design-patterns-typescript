@@ -1,4 +1,4 @@
-# Simple factory
+# Simple Factory
 
 Real world example
 

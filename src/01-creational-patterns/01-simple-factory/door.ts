@@ -27,6 +27,6 @@ export class WoodenDoor implements IDoor {
   }
 
   getMaterial(): string {
-      return this.material;
+    return this.material;
   }
 }
