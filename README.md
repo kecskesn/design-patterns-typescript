@@ -27,7 +27,7 @@ npm install
 npm start
 
 # run each pattern separately, e.g,
-node .\dist\01-creational-patterns\01-factory\client.js
+node .\dist\01-creational-patterns\01-factory\main.js
 ```
 
 # Useful links
