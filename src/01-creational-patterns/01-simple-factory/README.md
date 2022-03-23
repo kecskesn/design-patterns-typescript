@@ -6,7 +6,7 @@ Real world example
 
 In plain words
 
-> Simple factory simply generates an instance for client without exposing any instantiation logic to the client
+> The Simple factory pattern describes a class that has one creation method with a large conditional that based on method parameters chooses which product class to instantiate and then return. A simple factory is usually represented by a single method in a single class. Over time, this method might become too big, so you may decide to extract parts of the method to subclasses. Once you do it several times, you might discover that the whole thing turned into the classic factory method pattern.
 
 Wikipedia says
 
@@ -14,4 +14,4 @@ Wikipedia says
 
 When to Use?
 
-When creating an object is not just a few assignments and involves some logic, it makes sense to put it in a dedicated factory instead of repeating the same code everywhere.
+When creating an object is not just a few assignments and involves some logic, it makes sense to put it in a dedicated factory instead of repeating the same code everywhere. 

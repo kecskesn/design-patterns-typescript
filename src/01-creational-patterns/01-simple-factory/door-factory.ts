@@ -1,7 +1,16 @@
-import { IDoor, WoodenDoor } from "./door";
+import { IDoor, IronDoor, WoodenDoor } from "./door";
+
+export enum DoorStregth {
+  NORMAL,
+  STRONG
+}
 
 export default class DoorFactory {
-  static makeDoor(width: number, height: number): IDoor {
-    return new WoodenDoor(width, height);
+  static makeDoor(doorStregth: DoorStregth, width: number, height: number): IDoor {
+    if (doorStregth === DoorStregth.NORMAL) {
+      return new WoodenDoor(width, height);
+    } else {
+      return new IronDoor(width, height)
+    }
   }
 }
