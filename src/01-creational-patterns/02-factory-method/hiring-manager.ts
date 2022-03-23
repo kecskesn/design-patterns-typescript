@@ -1,6 +1,7 @@
 import { Developer, HumanResource, IInterviewer } from "./interviewer";
 
 abstract class HiringManager {
+  // factory method
   abstract makeInterviewer(): IInterviewer;
 
   takeInterview(): string {

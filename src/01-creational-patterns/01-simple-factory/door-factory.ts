@@ -5,6 +5,7 @@ export enum DoorStregth {
   STRONG
 }
 
+// simple factory
 export default class DoorFactory {
   static makeDoor(doorStregth: DoorStregth, width: number, height: number): IDoor {
     if (doorStregth === DoorStregth.NORMAL) {
