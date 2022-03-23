@@ -1,5 +1,6 @@
 import House from './house'
 
+// builder
 interface IHouseBuilder {
     house: House
     setBuildingType(buildingType: string): this

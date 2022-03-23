@@ -2,7 +2,13 @@
 
 Real world example
 
-> Imagine you are at a Pizza place and you order a specific deal, lets say, "Quattro Formaggi" and they hand it over to you without any questions; this is the example of simple factory. But there are cases when the creation logic might involve more steps. For example you want a customized pizza with toppings of your choice. You have several options in how your pizza is made e.g what size? thin or thick? what types of sauces would you like? What cheese would you want? etc. In such cases builder pattern comes to the rescue.
+> Let’s think about how to create a House object. To build a simple house, you need to construct four walls and a floor, install a door, fit a pair of windows, and build a roof. But what if you want a bigger, brighter house, with a backyard and other goodies (like a heating system, plumbing, and electrical wiring)?
+
+> The simplest solution is to extend the base House class and create a set of subclasses to cover all combinations of the parameters. But eventually you’ll end up with a considerable number of subclasses. Any new parameter, such as the porch style, will require growing this hierarchy even more.
+
+> There’s another approach that doesn’t involve breeding subclasses. You can create a giant constructor right in the base House class with all possible parameters that control the house object. While this approach indeed eliminates the need for subclasses, it creates another problem.
+
+> In most cases most of the parameters will be unused, making the constructor calls pretty ugly. For instance, only a fraction of houses have swimming pools, so the parameters related to swimming pools will be useless nine times out of ten.
 
 In plain words
 
@@ -15,7 +21,13 @@ Wikipedia says
 Let's see an anti-pattern first. At one point or the other we have all seen a constructor like below:
 
 ```typescript
-constructor(size, isThin, sauceType, cheeseType, cheeseCrust = false, toppings = [], ...)
+constructor(doors, windows, wallMaterial, buildingType, hasSwimmingPool, HasGarage, HasGarden, ...)
+{
+}
+constructor(doors, wallMaterial, buildingType, hasSwimmingPool, HasGarage, HasGarden, ...)
+{
+}
+constructor(doors, windows, wallMaterial, buildingType, ...)
 {
 }
 ```
