@@ -1,12 +1,8 @@
-import { PizzaBuilder, PizzaSize, SauceType } from "./pizza-builder";
+import IglooDirector from './igloo-director'
+import CastleDirector from './castle-director'
 
-let pizza = new PizzaBuilder(PizzaSize.BIG)
-  .setSauceType(SauceType.BOLOGNESE)
-  .hasCheeseCrust(true)
-  .addTopping("pepperoni")
-  .addTopping("tomato")
-  .addTopping("egg")
-  .buildPizza();
+const IGLOO = IglooDirector.construct()
+const CASTLE = CastleDirector.construct()
 
-console.log(pizza);
-pizza.eat();
+console.log(IGLOO.construction())
+console.log(CASTLE.construction())
