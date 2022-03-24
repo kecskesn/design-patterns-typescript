@@ -6,8 +6,8 @@ import CastleDirector from './castle-director'
  * You can always call the building steps in a specific order directly from the client code.
  * However, the director class might be a good place to put various construction routines so you can reuse them across your program.
  */
-const IGLOO = IglooDirector.construct()
-const CASTLE = CastleDirector.construct()
+let igloo = IglooDirector.construct()
+let castle = CastleDirector.construct()
 
-console.log(IGLOO.construction())
-console.log(CASTLE.construction())
+console.log(igloo.construction())
+console.log(castle.construction())

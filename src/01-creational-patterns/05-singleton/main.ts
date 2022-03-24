@@ -1,29 +1,29 @@
 import { Developer, President } from "./worker";
 
-const DEVELOPER1 = new Developer();
-const DEVELOPER2 = new Developer();
+let developer1 = new Developer();
+let developer2 = new Developer();
 
 console.log("Are developers the same?");
-console.log(DEVELOPER1 === DEVELOPER2);
+console.log(developer1 === developer2);
 
-DEVELOPER1.logDailyWork('pdp');
-DEVELOPER2.logDailyWork('programming');
+developer1.logDailyWork('pdp');
+developer2.logDailyWork('programming');
 
 console.log("Daily work of devs:");
-console.log(DEVELOPER1.getDailyWork());
-console.log(DEVELOPER2.getDailyWork());
+console.log(developer1.getDailyWork());
+console.log(developer2.getDailyWork());
 
 console.log();
 
-const PRESIDENT1 = President.getInstance();
-const PRESIDENT2 = President.getInstance();
+let president1 = President.getInstance();
+let president2 = President.getInstance();
 
 console.log("Are presidents the same?");
-console.log(PRESIDENT1 === PRESIDENT2);
+console.log(president1 === president2);
 
-PRESIDENT1.logDailyWork('signing papers');
-PRESIDENT2.logDailyWork('meeting');
+president1.logDailyWork('signing papers');
+president2.logDailyWork('meeting');
 
 console.log("Daily work of presidents:");
-console.log(PRESIDENT1.getDailyWork());
-console.log(PRESIDENT2.getDailyWork());
+console.log(president1.getDailyWork());
+console.log(president2.getDailyWork());

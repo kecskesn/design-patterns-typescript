@@ -1,16 +1,16 @@
 import Document from "./document";
 
-const ORIGINAL_DOCUMENT = new Document("document");
+let originalDocument = new Document("document");
 console.log("===ORIGINAL===");
-console.log(ORIGINAL_DOCUMENT);
+console.log(originalDocument);
 
-const DOCUMENT_COPY_1 = ORIGINAL_DOCUMENT.clone();
+let copyDocument1 = originalDocument.clone();
 console.log("===COPY===");
-console.log(DOCUMENT_COPY_1);
+console.log(copyDocument1);
 
-DOCUMENT_COPY_1.documentName = "copy";
+copyDocument1.documentName = "copy";
 console.log();
 console.log("===ORIGINAL===");
-console.log(ORIGINAL_DOCUMENT);
+console.log(originalDocument);
 console.log("===COPY===");
-console.log(DOCUMENT_COPY_1);
+console.log(copyDocument1);
