@@ -14,5 +14,5 @@ const LARGE_SQ_TUBE = new SquareTube(10);
 
 const SMALL_SQ_TUBE_ADAPTER = new SquareTubeAdapter(SMALL_SQ_TUBE);
 const LARGE_SQ_TUBE_ADAPTER = new SquareTubeAdapter(LARGE_SQ_TUBE);
-console.log(HOLE.fits(SMALL_SQ_TUBE_ADAPTER))
-console.log(HOLE.fits(LARGE_SQ_TUBE_ADAPTER))
+console.log(HOLE.fits(SMALL_SQ_TUBE_ADAPTER));
+console.log(HOLE.fits(LARGE_SQ_TUBE_ADAPTER));

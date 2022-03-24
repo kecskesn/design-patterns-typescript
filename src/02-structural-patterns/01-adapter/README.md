@@ -11,3 +11,7 @@ In plain words
 Wikipedia says
 
 > In software engineering, the adapter pattern is a software design pattern that allows the interface of an existing class to be used as another interface. It is often used to make existing classes work with others without modifying their source code.
+
+When to use?
+
+Use the Adapter class when you want to use some existing class, but its interface isn’t compatible with the rest of your code.
