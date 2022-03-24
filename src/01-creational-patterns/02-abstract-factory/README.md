@@ -8,10 +8,8 @@ In plain words
 
 > A factory of factories; a factory that groups the individual but related/dependent factories together without specifying their concrete classes.
 
-Wikipedia says
-
-> The abstract factory pattern provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes
-
 When to use?
 
-When there are interrelated dependencies with not-that-simple creation logic involved
+When there are interrelated dependencies with not-that-simple creation logic involved.
+
+The Abstract Factory provides you with an interface for creating objects from each class of the product family. As long as your code creates objects via this interface, you don’t have to worry about creating the wrong variant of a product which doesn’t match the products already created by your app.

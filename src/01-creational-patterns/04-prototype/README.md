@@ -20,10 +20,10 @@ In plain words
 
 > Prototype is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.
 
-Wikipedia says
-
-> The prototype pattern is a creational design pattern in software development. It is used when the type of objects to create is determined by a prototypical instance, which is cloned to produce new objects.
-
 When to use?
 
 When an object is required that is similar to existing object or when the creation would be expensive as compared to cloning.
+
+This happens a lot when your code works with objects passed to you from 3rd-party code via some interface. The concrete classes of these objects are unknown, and you couldn’t depend on them even if you wanted to.
+
+The Prototype pattern provides the client code with a general interface for working with all objects that support cloning. This interface makes the client code independent from the concrete classes of objects that it clones.
