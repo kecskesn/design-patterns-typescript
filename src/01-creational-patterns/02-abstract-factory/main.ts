@@ -1,21 +1,21 @@
-import { Application } from "./application";
-import { IGUIFactory, MacFactory, WinFactory } from "./gui-factory";
+import { Application } from './application';
+import { IGUIFactory, MacFactory, WinFactory } from './gui-factory';
 
 enum OS {
-    WIN,
-    MAC
+  WIN,
+  MAC,
 }
 
 function getOS() {
-    return OS.WIN;
+  return OS.WIN;
 }
 
 let factory: IGUIFactory;
 
 if (getOS() === OS.WIN) {
-    factory = new WinFactory();
+  factory = new WinFactory();
 } else {
-    factory = new MacFactory();
+  factory = new MacFactory();
 }
 
 let application = new Application(factory);

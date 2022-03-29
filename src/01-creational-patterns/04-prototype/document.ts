@@ -1,5 +1,5 @@
 // A sample document to be used in the Prototype example
-import ProtoType from "./iprototype";
+import ProtoType from './iprototype';
 
 export default class Document implements ProtoType {
   constructor(private name: string) {

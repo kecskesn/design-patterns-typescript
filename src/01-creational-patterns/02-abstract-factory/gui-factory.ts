@@ -1,5 +1,5 @@
-import { IButton, MacButton, WinButton } from "./button";
-import { ICheckbox, MacCheckbox, WinCheckbox } from "./checkbox";
+import { IButton, MacButton, WinButton } from './button';
+import { ICheckbox, MacCheckbox, WinCheckbox } from './checkbox';
 
 // absctarct factory
 export interface IGUIFactory {

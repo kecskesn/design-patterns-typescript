@@ -1,4 +1,4 @@
-import { Developer, HumanResource, IInterviewer } from "./interviewer";
+import { Developer, HumanResource, IInterviewer } from './interviewer';
 
 abstract class HiringManager {
   // factory method
@@ -11,13 +11,13 @@ abstract class HiringManager {
 }
 
 export class DevelopmentManager extends HiringManager {
-    makeInterviewer(): IInterviewer {
-        return new Developer();
-    }
+  makeInterviewer(): IInterviewer {
+    return new Developer();
+  }
 }
 
 export class HumanResourceManager extends HiringManager {
-    makeInterviewer(): IInterviewer {
-        return new HumanResource();
-    }
+  makeInterviewer(): IInterviewer {
+    return new HumanResource();
+  }
 }

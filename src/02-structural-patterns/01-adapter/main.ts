@@ -1,6 +1,6 @@
-import RoundHole from "./hole";
-import SquareTubeAdapter from "./square-tube.adapter";
-import { RoundTube, SquareTube } from "./tube";
+import RoundHole from './hole';
+import SquareTubeAdapter from './square-tube.adapter';
+import { RoundTube, SquareTube } from './tube';
 
 let hole = new RoundHole(5);
 let roundTube = new RoundTube(5);

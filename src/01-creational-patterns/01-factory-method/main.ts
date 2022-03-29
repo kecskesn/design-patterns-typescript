@@ -1,4 +1,4 @@
-import { DevelopmentManager, HumanResourceManager } from "./hiring-manager";
+import { DevelopmentManager, HumanResourceManager } from './hiring-manager';
 
 let developerManager = new DevelopmentManager();
 console.log(developerManager.takeInterview());

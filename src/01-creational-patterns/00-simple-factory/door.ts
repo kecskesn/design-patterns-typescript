@@ -1,4 +1,4 @@
-import { dimension } from "./dimension";
+import { dimension } from './dimension';
 
 export interface IDoor {
   width: number;
@@ -16,7 +16,7 @@ export class WoodenDoor implements IDoor {
   constructor(width: number, height: number) {
     this.width = width;
     this.height = height;
-    this.material = "Wood";
+    this.material = 'Wood';
   }
 
   getDimensions(): dimension {
@@ -39,7 +39,7 @@ export class IronDoor implements IDoor {
   constructor(width: number, height: number) {
     this.width = width;
     this.height = height;
-    this.material = "Iron";
+    this.material = 'Iron';
   }
 
   getDimensions(): dimension {

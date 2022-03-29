@@ -4,12 +4,12 @@ export interface ICheckbox {
 
 export class WinCheckbox implements ICheckbox {
   public render(): string {
-    return "Windows checkbox rendered!";
+    return 'Windows checkbox rendered!';
   }
 }
 
 export class MacCheckbox implements ICheckbox {
   public render(): string {
-    return "Mac checkbox rendered!";
+    return 'Mac checkbox rendered!';
   }
 }

@@ -1,5 +1,5 @@
-import { AquaTheme, DarkTheme } from "./theme";
-import { About, Careers } from "./web-page";
+import { AquaTheme, DarkTheme } from './theme';
+import { About, Careers } from './web-page';
 
 let aboutPage = new About(new DarkTheme());
 let careersPage = new Careers(new AquaTheme());

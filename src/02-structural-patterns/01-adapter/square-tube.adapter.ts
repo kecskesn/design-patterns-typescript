@@ -1,4 +1,4 @@
-import { IRound, SquareTube } from "./tube";
+import { IRound, SquareTube } from './tube';
 
 export default class SquareTubeAdapter implements IRound {
   constructor(private tube: SquareTube) {
@@ -6,6 +6,6 @@ export default class SquareTubeAdapter implements IRound {
   }
 
   getRadius(): number {
-    return this.tube.getWidth() * Math.SQRT2 / 2;
+    return (this.tube.getWidth() * Math.SQRT2) / 2;
   }
 }

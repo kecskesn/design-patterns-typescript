@@ -4,12 +4,12 @@ export interface IButton {
 
 export class WinButton implements IButton {
   public render(): string {
-    return "Windows button rendered!";
+    return 'Windows button rendered!';
   }
 }
 
 export class MacButton implements IButton {
   public render(): string {
-    return "Mac button rendered!";
+    return 'Mac button rendered!';
   }
 }

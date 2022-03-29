@@ -4,18 +4,18 @@ export interface ITheme {
 
 export class DarkTheme implements ITheme {
   getColor(): string {
-    return "Dark Black";
+    return 'Dark Black';
   }
 }
 
 export class LightTheme implements ITheme {
   getColor(): string {
-    return "White";
+    return 'White';
   }
 }
 
 export class AquaTheme implements ITheme {
   getColor(): string {
-    return "Light blue";
+    return 'Light blue';
   }
 }

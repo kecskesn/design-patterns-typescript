@@ -1,4 +1,4 @@
-import { IRound } from "./tube";
+import { IRound } from './tube';
 
 export default class RoundHole {
   constructor(private radius: number) {
