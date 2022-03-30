@@ -1,14 +1,14 @@
 # Factory Method
 
-Real world example
+## Real world example
 
 > Consider the case of a hiring manager. It is impossible for one person to interview for each of the positions. Based on the job opening, she has to decide and delegate the interview steps to different people.
 
-In plain words
+## In plain words
 
 > It provides a way to delegate the instantiation logic to child classes.
 
-When to use?
+## When to use??
 
 Useful when there is some generic processing in a class but the required sub-class is dynamically decided at runtime. Or putting it in other words, when the client doesn't know what exact sub-class it might need.
 

@@ -1,6 +1,6 @@
 # Prototype
 
-Real world example
+## Real world example
 
 > Well, not really a real world example, because this design pattern is not meant to solve one, instead it meant to solve a problem that comes up in programming. Instead let's take a look at the problem we are trying to solve, and see the solution.
 
@@ -16,11 +16,11 @@ Solution
 
 > The Prototype pattern delegates the cloning process to the actual objects that are being cloned. The pattern declares a common interface for all objects that support cloning. 
 
-In plain words
+## In plain words
 
 > Prototype is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.
 
-When to use?
+## When to use??
 
 When an object is required that is similar to existing object or when the creation would be expensive as compared to cloning.
 

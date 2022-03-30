@@ -1,14 +1,14 @@
 # Composite
 
-Real world example
+## Real world example
 
 > Imagine the file system in a computer: there are leafs (files) and composites (folder). Both behave similarly (you can rename, delete, move, etc.). A folder can contain other folders, but files can't have child in the hierarchy.
 
-In plain words
+## In plain words
 
 > Composite is a structural design pattern that lets you compose objects into tree structures and then work with these structures as if they were individual objects. 
 
-When to use?
+## When to use??
 
 Use the Composite pattern when you have to implement a tree-like object structure.
 

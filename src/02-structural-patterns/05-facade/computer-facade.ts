@@ -1,6 +1,8 @@
 import Computer from './computer';
 
 export default class ComputerFacade {
+  private computer;
+
   constructor() {
     this.computer = new Computer();
   }
