@@ -10,12 +10,11 @@ There are 23 design patterns which can be classified in three categories. This l
 
 One thing to keep in mind though: do not try to force these into every situation. If they are used correctly they can help you out a ton, but if not, the result can be horrible.
 
-Types of Design Patterns
------------------
+## Types of Design Patterns
 
-* Creational
-* Structural
-* Behavioral
+- Creational
+- Structural
+- Behavioral
 
 # Setup Project
 
@@ -32,6 +31,5 @@ node .\dist\01-creational-patterns\01-simple-factory\main.js
 
 # Useful links
 
-* [Design patterns on refactoring.guru](https://refactoring.guru/design-patterns)
-* [Sean Bradley - Design Patterns in Typescript (github)](https://github.com/Sean-Bradley/Design-Patterns-In-TypeScript)
-* [kamranahmedse - Design Patterns for Humans (github)](https://github.com/kamranahmedse/design-patterns-for-humans)
+- [Design patterns on refactoring.guru](https://refactoring.guru/design-patterns)
+- [Sean Bradley - Design Patterns in Typescript (github)](https://github.com/Sean-Bradley/Design-Patterns-In-TypeScript)
