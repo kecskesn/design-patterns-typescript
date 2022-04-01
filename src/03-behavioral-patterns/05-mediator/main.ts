@@ -5,6 +5,7 @@ let mediator = new Mediator();
 
 let malwareDatabase = new Component(mediator, 'malwareDatabase');
 let serverProtection = new Component(mediator, 'serverProtection');
+let gatya = new Component(mediator, 'gatya');
 
 mediator.add(malwareDatabase);
 mediator.add(serverProtection);
