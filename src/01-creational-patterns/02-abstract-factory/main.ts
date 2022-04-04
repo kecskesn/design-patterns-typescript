@@ -7,7 +7,7 @@ enum OS {
 }
 
 function getOS() {
-  return OS.WIN;
+  return OS.MAC;
 }
 
 let factory: IGUIFactory;
