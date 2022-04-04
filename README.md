@@ -30,3 +30,4 @@ node .\dist\01-creational-patterns\01-simple-factory\main.js
 - [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.goodreads.com/book/show/85009.Design_Patterns)
 - [Design patterns on refactoring.guru](https://refactoring.guru/design-patterns)
 - [Sean Bradley - Design Patterns in Typescript (github)](https://github.com/Sean-Bradley/Design-Patterns-In-TypeScript)
+- [Design Patterns - Wikipedia](https://en.wikipedia.org/wiki/Design_Patterns)
