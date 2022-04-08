@@ -31,3 +31,4 @@ node .\dist\01-creational-patterns\01-simple-factory\main.js
 - [Design patterns on refactoring.guru](https://refactoring.guru/design-patterns)
 - [Sean Bradley - Design Patterns in Typescript (github)](https://github.com/Sean-Bradley/Design-Patterns-In-TypeScript)
 - [Design Patterns - Wikipedia](https://en.wikipedia.org/wiki/Design_Patterns)
+- [Geekific - Design Patterns (youtube)](https://www.youtube.com/watch?v=mE3qTp1TEbg&list=PLlsmxlJgn1HJpa28yHzkBmUY-Ty71ZUGc)
