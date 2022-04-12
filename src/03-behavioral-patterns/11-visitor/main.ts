@@ -1,10 +1,17 @@
-import { Car } from './abstract-car-part';
-import { PrintPartsVisitor, TotalPriceVisitor } from './ivisitor';
+import { Dog, Lion, Monkey } from "./visitable";
+import { Jump, Speak } from "./visitor";
 
-let car = new Car('DeLorean');
+let monkey = new Monkey();
+let lion = new Lion();
+let dog = new Dog();
 
-car.accept(new PrintPartsVisitor());
+let speak = new Speak();
 
-const TOTAL_PRICE_VISITOR = new TotalPriceVisitor();
-car.accept(TOTAL_PRICE_VISITOR);
-console.log(`Total Price = ${TOTAL_PRICE_VISITOR.totalPrice}`);
+monkey.accept(speak);
+lion.accept(speak);
+dog.accept(speak);
+
+// let jump = new Jump();
+// monkey.accept(jump);
+// lion.accept(jump);
+// dog.accept(jump);
