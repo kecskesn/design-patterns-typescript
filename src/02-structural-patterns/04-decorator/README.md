@@ -2,7 +2,7 @@
 
 ## Real world example
 
-> Imagine you run a coffee shop. First you sold simple coffee, but later you added milk coffee, vanilla coffee, whip coffee to the drinks. These got extra ingridients and are more expensive because of that. But a customer walks in and wants a milk coffee whit whip. You can create a lot of subclasses, and mix and match every possible scenario but the code will get pretty messy as you go. Other solution is to use the decator design pattern.
+> Imagine you run a coffee shop. First you sold simple coffee, but later you added milk coffee, vanilla coffee, whip coffee to the drinks. These got extra ingridients and are more expensive because of that. But a customer walks in and wants a milk coffee with whip. You can create a lot of subclasses, and mix and match every possible scenario but the code will get pretty messy as you go. Other solution is to use the decator design pattern.
 
 ## In plain words
 
