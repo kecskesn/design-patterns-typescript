@@ -1,17 +1,15 @@
-import { Dog, Lion, Monkey } from "./visitable";
-import { Jump, Speak } from "./visitor";
+import { Bank, Company, Resident, Restaurant } from "./visitable";
+import { InsuranceMessagingVisitor } from "./visitor";
 
-let monkey = new Monkey();
-let lion = new Lion();
-let dog = new Dog();
+let clients = [
+    new Resident('John Doe', '810 Lake Ave Clark, New Jersey(NJ), 07066', 'john.doe99@gmail.com', 'Life Insurance'),
+    new Company('Musico Ltd', '12018 Maidstone Ave Norwalk, California(CA), 90650', 'info@musico.com', 134),
+    new Bank('Bank of California', '20181 Hudson St Burney, California(CA), 96013', 'info@bankofcalifornia.org', 15),
+    new Restaurant('Pizza italia', '38 Fairview Ave Naugatuck, Connecticut(CT), 06770', 'pizza.italia@gmail.com', true),
+]
 
-let speak = new Speak();
+let insuranceMessagingVisitor = new InsuranceMessagingVisitor();
 
-monkey.accept(speak);
-lion.accept(speak);
-dog.accept(speak);
-
-// let jump = new Jump();
-// monkey.accept(jump);
-// lion.accept(jump);
-// dog.accept(jump);
+clients.forEach(client => {
+    client.accept(insuranceMessagingVisitor);
+});

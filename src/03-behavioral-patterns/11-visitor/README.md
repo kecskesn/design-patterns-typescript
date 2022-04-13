@@ -6,7 +6,7 @@
 
 > - If it’s a residential building, he sells medical insurance.
 > - If it’s a bank, he sells theft insurance.
-> - If it’s a coffee shop, he sells fire and flood insurance.
+> - If it’s a restaurant, he sells fire and flood insurance.
 
 ## In plain words
 

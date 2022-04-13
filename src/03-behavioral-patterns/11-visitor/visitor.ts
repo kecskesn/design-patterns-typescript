@@ -1,35 +1,26 @@
-import { Dog, Lion, Monkey } from './visitable';
+import { Bank, Company, Resident, Restaurant } from './visitable';
 
 export interface IVisitor {
-  visitMonkey(monkey: Monkey): void;
-  visitLion(lion: Lion): void;
-  visitDog(dog: Dog): void;
+  visitResident(client: Resident): void;
+  visitCompany(client: Company): void;
+  visitBank(client: Bank): void;
+  visitRestaurant(client: Restaurant): void;
 }
 
-export class Speak implements IVisitor {
-  visitMonkey(monkey: Monkey): void {
-    monkey.shout();
+export class InsuranceMessagingVisitor implements IVisitor {
+  visitResident(client: Resident): void {
+    console.log(`Sending medical insurance mail to ${client.getEmail()}!`);
   }
 
-  visitLion(lion: Lion): void {
-    lion.roar();
+  visitCompany(client: Company): void {
+    console.log(`Sending employee and equipment insurance mail to ${client.getEmail()}!`);
   }
 
-  visitDog(dog: Dog): void {
-    dog.bark();
-  }
-}
-
-export class Jump implements IVisitor {
-  visitMonkey(_: Monkey): void {
-    console.log('Jumped 6 meters high on to the tree!');
+  visitBank(client: Bank): void {
+    console.log(`Sending theft insurance mail to ${client.getEmail()}!`);
   }
 
-  visitLion(_: Lion): void {
-    console.log('Jumped 7 feet! Back on the ground!');
-  }
-
-  visitDog(_: Dog): void {
-    console.log('Jumped around a bit cuz Im a happy boi!');
+  visitRestaurant(client: Restaurant): void {
+    console.log(`Sending fire and flood insurance mail to ${client.getEmail()}!`);
   }
 }
