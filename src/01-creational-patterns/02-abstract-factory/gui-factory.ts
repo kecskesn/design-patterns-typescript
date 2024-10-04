@@ -1,5 +1,5 @@
-import { IButton, MacButton, WinButton } from './button';
-import { ICheckbox, MacCheckbox, WinCheckbox } from './checkbox';
+import { IButton, LinuxButton, MacButton, WinButton } from './button';
+import { ICheckbox, LinuxCheckbox, MacCheckbox, WinCheckbox } from './checkbox';
 
 // absctarct factory
 export interface IGUIFactory {
@@ -22,5 +22,14 @@ export class MacFactory implements IGUIFactory {
   }
   createCheckBox(): ICheckbox {
     return new MacCheckbox();
+  }
+}
+
+export class LinuxFactory implements IGUIFactory {
+  createButton(): IButton {
+    return new LinuxButton();
+  }
+  createCheckBox(): ICheckbox {
+    return new LinuxCheckbox();
   }
 }

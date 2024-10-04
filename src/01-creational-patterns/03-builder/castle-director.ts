@@ -9,6 +9,7 @@ export default class CastleDirector {
       .setWallMaterial('Sandstone')
       .setNumberDoors(100)
       .setNumberWindows(200)
+      .setHasDragon(true)
       .getResult();
   }
 }

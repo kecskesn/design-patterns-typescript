@@ -13,3 +13,9 @@ export class MacCheckbox implements ICheckbox {
     return 'Mac checkbox rendered!';
   }
 }
+
+export class LinuxCheckbox implements ICheckbox {
+  public render(): string {
+    return 'Linux checkbox rendered!';
+  }
+}

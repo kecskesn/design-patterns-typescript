@@ -13,3 +13,9 @@ export class MacButton implements IButton {
     return 'Mac button rendered!';
   }
 }
+
+export class LinuxButton implements IButton {
+  public render(): string {
+    return 'Linux button rendered!';
+  }
+}

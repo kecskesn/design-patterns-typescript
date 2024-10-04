@@ -1,10 +1,10 @@
 import Document from './document';
 
-let originalDocument = new Document('document');
+let originalDocument: Document = new Document('document');
 console.log('===ORIGINAL===');
 console.log(originalDocument);
 
-let copyDocument1 = originalDocument.clone();
+let copyDocument1: Document = originalDocument.clone();
 console.log('===COPY===');
 console.log(copyDocument1);
 

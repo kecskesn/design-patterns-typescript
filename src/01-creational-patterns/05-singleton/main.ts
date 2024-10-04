@@ -1,7 +1,7 @@
-import { Developer, President } from './worker';
+import { Developer, IWorker, President } from './worker';
 
-let developer1 = new Developer();
-let developer2 = new Developer();
+const developer1: IWorker = new Developer();
+const developer2: IWorker = new Developer();
 
 console.log('Are developers the same?');
 console.log(developer1 === developer2);
@@ -15,8 +15,11 @@ console.log(developer2.getDailyWork());
 
 console.log();
 
-let president1 = President.getInstance();
-let president2 = President.getInstance();
+// This code will not work because the constructor is private
+// const president: IWorker = new President();
+
+const president1: IWorker = President.getInstance();
+const president2: IWorker = President.getInstance();
 
 console.log('Are presidents the same?');
 console.log(president1 === president2);

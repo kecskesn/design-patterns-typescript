@@ -7,6 +7,7 @@ interface IHouseBuilder {
   setWallMaterial(wallMaterial: string): this;
   setNumberDoors(number: number): this;
   setNumberWindows(number: number): this;
+  setHasDragon(hasDragon: boolean): this;
   getResult(): House;
 }
 
@@ -34,6 +35,11 @@ export default class HouseBuilder implements IHouseBuilder {
 
   setNumberWindows(number: number): this {
     this.house.windows = number;
+    return this;
+  }
+
+  setHasDragon(hasDragon: boolean): this {
+    this.house.hasDragon = hasDragon;
     return this;
   }
 

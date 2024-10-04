@@ -1,11 +1,11 @@
 import { Developer, HumanResource, IInterviewer } from './interviewer';
 
-abstract class HiringManager {
+export abstract class HiringManager {
   // factory method
   abstract makeInterviewer(): IInterviewer;
 
   takeInterview(): string {
-    let interviewer = this.makeInterviewer();
+    let interviewer: IInterviewer = this.makeInterviewer();
     return interviewer.askQuestions();
   }
 }

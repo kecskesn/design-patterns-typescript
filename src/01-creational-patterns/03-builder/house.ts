@@ -3,8 +3,9 @@ export default class House {
   windows = 0;
   wallMaterial = '';
   buildingType = '';
+  hasDragon = false;
 
   construction(): string {
-    return `This is a ${this.wallMaterial} ${this.buildingType} with ${this.doors} door(s) and ${this.windows} window(s).`;
+    return `This is a ${this.wallMaterial} ${this.buildingType} with ${this.doors} door(s) and ${this.windows} window(s). ${this.hasDragon ? 'Beware of the dragon!' : ''}`;
   }
 }
